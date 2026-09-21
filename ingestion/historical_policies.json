@@ -1,0 +1,12 @@
+[
+  {
+    "PolicyId": 3,
+    "Customer": "Sanket",
+    "Premium": 1000
+  },
+  {
+    "PolicyId": 4,
+    "Customer": "Pawar",
+    "Premium": 1500
+  }
+]
