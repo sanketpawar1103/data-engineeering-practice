@@ -1,0 +1,12 @@
+[
+  {
+    "ClaimId": 1,
+    "PolicyId": 1,
+    "ClaimAmount": 500
+  },
+  {
+    "ClaimId": 2,
+    "PolicyId": 2,
+    "ClaimAmount": 1000
+  }
+]
