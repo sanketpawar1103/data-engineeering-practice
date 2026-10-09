@@ -1,11 +1,8 @@
 class Card :
-    def __init__(self, cardId, title):
-        self.cardId = cardId
+    def __init__(self, card_id, title):
+        self.card_id = card_id
         self.title = title
         self.assignee = None
 
-    def display(self):
-        print(f"Card ID: {self.cardId}, Title: {self.title}, Assignee: {self.assignee}")
-
-    def assign(self, developerId):
-        self.assignee = developerId
+    def assign(self, developer):
+        self.assignee = developer.developer_id
