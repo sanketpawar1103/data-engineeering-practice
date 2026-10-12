@@ -24,3 +24,6 @@ class Jira:
                 assignee = card.assignee
                 status = "Assigned"
         self.preetify(card, assignee, status)
+
+    def find_card(self, card_id):
+        return self.cards.get(card_id)

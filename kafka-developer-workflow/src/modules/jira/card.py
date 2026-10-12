@@ -4,5 +4,5 @@ class Card :
         self.title = title
         self.assignee = None
 
-    def assign(self, developer):
-        self.assignee = developer.developer_id
+    def assign(self, developer_id):
+        self.assignee = developer_id
