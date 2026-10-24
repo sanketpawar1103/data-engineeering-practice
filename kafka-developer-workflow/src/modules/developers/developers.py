@@ -1,9 +1,10 @@
 from src.modules.developers.developer import Developer
 
 class Developers:
-    def __init__(self):
+    def __init__(self, producer):
         self.next_id = 100
         self.developers = {}
+        self.producer = producer
 
     def add_developer(self, name):
         self.developers[self.next_id] = Developer(self.next_id, name)

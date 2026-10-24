@@ -10,4 +10,3 @@ class EventProducer:
 
     def close(self):
         self.producer.close()
-    

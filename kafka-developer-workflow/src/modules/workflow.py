@@ -1,7 +1,15 @@
 class Workflow:
-    def __init__(self, jira, developers):
+    def __init__(self, jira, developers, producer):
         self.jira = jira
         self.developers = developers
+        self.producer = producer
+
+    def add_card(self, card):
+        self.jira.add_card(card)
+        self.producer.publish(
+            "card_added",
+            f"CardCreated:{card.card_id}"
+        )
 
     def assign_card_to_developer(self, card_id):
         card = self.jira.find_card(card_id)
